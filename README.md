@@ -6,7 +6,7 @@ The auth project creates a wrapper layer for authentication against different pr
  - Maven 3.x
  - MySQL installed
    - Create database : authdb
-   - Add db user : authdb (Password : authdb)
+   - Add db user : admin (Password : admin)
  - Tomcat 8.0
  
 ### Build Steps

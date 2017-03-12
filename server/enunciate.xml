@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<enunciate label="lifesenseserverapi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://enunciate.codehaus.org/schemas/enunciate-1.25.xsd">
+    <webapp mergeWebXML="src/main/webapp/WEB-INF/web.xml" />
+    <services>
+		<rest defaultRestSubcontext="/"/>
+	</services>
+    <api-import pattern="io.koopid.server.rest.service.*" />
+    <api-import pattern="io.koopid.server.rest.exception.*" />
+    <api-import pattern="io.koopid.server.rest.common.*" />
+    <api-import pattern="io.koopid.server.auth.filter.*" />
+    <api-import pattern="io.koopid.server.rest.model.*" />
+    
+    <api-import pattern="io.koopid.persistence.common.*" />
+    <api-import pattern="io.koopid.persistence.config.*" />
+    <api-import pattern="io.koopid.persistence.entity.*" />
+    <api-import pattern="io.koopid.persistence.service.*" />
+    <api-import pattern="io.koopid.persistence.service.factory.*" />
+    <api-import pattern="io.koopid.persistence.service.spi.*" />
+    <api-import pattern="io.koopid.persistence.service.spi.util.*" />
+    <api-import pattern="javax.ws.rs.core.*" />
+
+    <modules>
+    	<spring-app disabled="true" />
+		<docs docsDir="/" splashPackage="io.koopid.server.rest.service" title="Authentication Server" copyright="Koopid"/>
+        <docs docsDir="api" title="Authentication API"/>
+    </modules>
+</enunciate>

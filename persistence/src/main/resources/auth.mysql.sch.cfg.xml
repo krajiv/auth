@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+ 
+ 
+ <!-- The following settings should be used for development machines. Comment them out on production machines-->
+  	 
+ 		<property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+ 		<property name="connection.url">jdbc:mysql://127.0.0.1:3306/authdb</property>
+		<property name="connection.username">lsweb</property>
+		<property name="connection.password">lsweb</property>
+		<property name="hibernate.ejb.naming_strategy">org.hibernate.cfg.ImprovedNamingStrategy</property>
+    		<property name="hibernate.c3p0.min_size">5</property>
+    		<property name="hibernate.c3p0.max_size">20</property>
+    		<property name="hibernate.c3p0.timeout">1800</property>
+    		<property name="hibernate.c3p0.max_statements">50</property>
+    		<property name="hibernate.c3p0.idle_test_period">3000</property>
+	
+ <!-- End of settings for development machines -->
+ 
+ 
+ 
+ <!-- The following settings should be used for Production setup -->
+<!--   
+ 		<property name="hibernate.connection.datasource">java:comp/env/jdbc/mysql/authdb</property>
+ -->
+ <!-- End of settings for production setup -->
+ 
+ 
+ 
+ <!-- Common settings. Should be enabled on both development and production setups -->
+ 
+	    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+	    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+	    <property name="show_sql">true</property>
+	    <property name="format_sql">true</property>
+	    <property name="hbm2ddl.auto">update</property>
+	    <property name="current_session_context_class">thread</property>
+	    <!-- Mapping classes -->
+	    <!-- End Mapping classes -->
+ <!-- End of common settings -->
+ 
+ 
+</session-factory>
+</hibernate-configuration>

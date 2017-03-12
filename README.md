@@ -5,8 +5,8 @@ The auth project creates a wrapper layer for authentication against different pr
  - JDK 1.8
  - Maven 3.x
  - MySQL installed
-   - Create database : kauth
-   - Add db user : kauth (Password : kauth)
+   - Create database : authdb
+   - Add db user : authdb (Password : authdb)
  - Tomcat 8.0
  
 ### Build Steps
@@ -38,4 +38,3 @@ The auth project creates a wrapper layer for authentication against different pr
  
  
 
-**@author: krajiv**

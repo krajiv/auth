@@ -7,7 +7,7 @@
  
  
  <!-- The following settings should be used for development machines. Comment them out on production machines-->
-  	 
+<!--  	 
  		<property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
  		<property name="connection.url">jdbc:mysql://127.0.0.1:3306/authdb</property>
 		<property name="connection.username">lsweb</property>
@@ -18,15 +18,15 @@
     		<property name="hibernate.c3p0.timeout">1800</property>
     		<property name="hibernate.c3p0.max_statements">50</property>
     		<property name="hibernate.c3p0.idle_test_period">3000</property>
-	
+ -->	
  <!-- End of settings for development machines -->
  
  
  
  <!-- The following settings should be used for Production setup -->
-<!--   
+  
  		<property name="hibernate.connection.datasource">java:comp/env/jdbc/mysql/authdb</property>
- -->
+ 
  <!-- End of settings for production setup -->
  
  

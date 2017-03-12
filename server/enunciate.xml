@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<enunciate label="lifesenseserverapi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<enunciate label="authserverapi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="http://enunciate.codehaus.org/schemas/enunciate-1.25.xsd">
     <webapp mergeWebXML="src/main/webapp/WEB-INF/web.xml" />
     <services>
